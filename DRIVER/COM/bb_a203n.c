@@ -1392,6 +1392,7 @@ static int32 Cleanup(
     +------------------------------*/
     /* release memory for the board handle */
     OSS_MemFree( brdHdl->osHdl, (int8*)brdHdl, brdHdl->ownMemSize);
+    brdHdl = NULL;
 
     /*------------------------------+
     |  return error code            |
