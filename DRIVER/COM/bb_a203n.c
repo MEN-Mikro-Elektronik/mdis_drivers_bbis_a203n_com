@@ -317,8 +317,8 @@ static int32 A203N_Init(
     /* ----- DEBUG_XXX -----*/
     status = DESC_GetUInt32(brdHdl->descHdl, OSS_DBG_DEFAULT, &value,
 				"DEBUG_LEVEL_DESC");
-    if ( status && (status!=ERR_DESC_KEY_NOTFOUND) )
-        return( Cleanup(brdHdl,status) );
+	if ( status && (status!=ERR_DESC_KEY_NOTFOUND) )
+		return( Cleanup(brdHdl,status) );
 
 	/* set debug level for DESC module */
 	DESC_DbgLevelSet(brdHdl->descHdl, value);
@@ -810,9 +810,9 @@ static int32 A203N_BrdInfo(
 		 * build hw name (e.g. A203N board)
 		 */
 		from = BRD_NAME;
-	    while( (*brdName++ = *from++) );	/* copy string */
+		while( (*brdName++ = *from++) );	/* copy string */
 		from = " board";
-	    while( (*brdName++ = *from++) );	/* copy string */
+		while( (*brdName++ = *from++) );	/* copy string */
 
         break;
     }
