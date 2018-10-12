@@ -91,6 +91,8 @@
 
 #include <MEN/a203n.h>      /* A203N register defines         */
 
+#define A203N 		0
+#define A203N_SW	1
 
 #ifndef A203N_VARIANT
 #	error "A203N_VARIANT must be set"
