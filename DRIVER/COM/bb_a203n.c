@@ -15,49 +15,7 @@
  *              A203N_VARIANT - prefix for global symbols
  *              A203N_VARIANT=A203N : standard bbis (supports A203N CPCI boards)
  */
- /*-------------------------------[ History ]--------------------------------
- *
- * $Log: bb_a203n.c,v $
- * Revision 1.9  2010/04/20 15:45:24  CKauntz
- * R: VME address window not released on exit
- * M: Added OSS_UnMapVmeAddr at Cleanup to unmap vme address window
- *
- * Revision 1.8  2010/04/12 10:47:51  CKauntz
- * R:1. Insufficient numer of parameters in debug prints
- *   2. value is always 32 bit
- * M:1. Added BRD_NAME parameter
- *   2. Changed format specifier in debug print
- *
- * Revision 1.7  2009/08/06 11:02:14  CRuff
- * R: make 64bit compatible
- * M: CfgInfoSlot(): change address type cast to U_INT32_OR_64
- *
- * Revision 1.6  2009/07/23 15:04:18  cs
- * R:1. update to MDIS5
- * M:1.a) added support for 64bit (API,...)
- *     b) adapted DBG prints for 64bit pointers
- *     c) put all MACCESS macros in conditionals in brackets
- *
- * Revision 1.5  2009/04/20 10:04:07  ts
- * R: build failed for OS who define OSS_HAS_UNASSIGN_RESOURCES (Linux)
- * M: added member pciBusNbr in BBIS_HANDLE struct which was missing
- *
- * Revision 1.4  2007/05/11 10:59:15  cs
- * fixed:
- *   - MDIS on some OS doesn't support OSS_MapVmeAddr()
- *     instead use OSS_BusToPhysAddr(.., OSS_BUSTYPE_VME, ...)
- *     when OSS_HAS_MAP_VME_ADDR is not defined
- *
- * Revision 1.3  2006/12/20 12:28:36  ufranke
- * changed
- *  - fkt13 replaced by setIrqHandle
- *
- * Revision 1.2  2005/10/10 15:05:39  dpfeuffer
- * A203N_Init/Cleanup(): to less resources assigned/unassigned
- *
- * Revision 1.1  2005/08/03 12:03:53  dpfeuffer
- * Initial Revision
- *
+ /*
  *---------------------------------------------------------------------------
  * (c) Copyright by MEN Mikro Elektronik GmbH, Nuremberg, Germany
  ******************************************************************************/
