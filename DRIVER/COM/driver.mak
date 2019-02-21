@@ -6,17 +6,8 @@
 #  
 #    Description: Makefile definitions for the A203N BBIS driver
 #                      
-#---------------------------------[ History ]---------------------------------
-#
-#   $Log: driver.mak,v $
-#   Revision 1.2  2006/09/13 14:09:43  DPfeuffer
-#   MAK_INCL fixed
-#
-#   Revision 1.1  2005/08/03 12:03:54  dpfeuffer
-#   Initial Revision
-#
 #-----------------------------------------------------------------------------
-#   (c) Copyright by MEN mikro elektronik GmbH, Nuernberg, Germany 
+#   Copyright (c) 2019, MEN Mikro Elektronik GmbH
 #*****************************************************************************
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
