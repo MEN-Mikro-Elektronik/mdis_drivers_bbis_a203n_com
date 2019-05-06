@@ -172,6 +172,6 @@
 /** \example a203n_sw_min.dsc */
 /** \example a203n_sw_max.dsc */
 
-/*! \page dummy
+/*! \page a203ndummy MEN logo
   \menimages
 */
