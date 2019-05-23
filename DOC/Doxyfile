@@ -1,6 +1,8 @@
 @INCLUDE_PATH = $(MEN_DOXYGENTMPL)
 @INCLUDE = DoxyfileCommon
 
+#MDIS_COMMIT=
+
 PROJECT_NAME           = "A203N BBIS Driver"
 INPUT                  = ../DRIVER/COM \
                          $(MEN_COM_INC)/MEN/bb_a203n.h
