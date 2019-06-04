@@ -3,8 +3,6 @@
  *        \file  bb_a203n.c
  *
  *      \author  dieter.pfeuffer@men.de
- *        $Date: 2010/04/20 15:45:24 $
- *    $Revision: 1.9 $
  *
  *      \brief   A203N board handler routines for A203N Carrier Boards
  *
@@ -114,6 +112,8 @@ typedef struct {
 /* include files which need BBIS_HANDLE */
 #include <MEN/bb_entry.h>	/* bbis jumptable			*/
 #include <MEN/bb_a203n.h>	/* A203N bbis header file	*/
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 /*-----------------------------------------+
 |  PROTOTYPES                              |

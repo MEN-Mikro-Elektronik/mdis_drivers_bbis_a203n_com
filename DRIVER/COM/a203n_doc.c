@@ -3,8 +3,6 @@
  *        \file  a203n_doc.c
  *
  *      \author  dieter.pfeuffer@men.de
- *        $Date: 2005/08/03 12:03:51 $
- *    $Revision: 1.1 $
  *
  *      \brief   User documentation for A203N board driver
  *

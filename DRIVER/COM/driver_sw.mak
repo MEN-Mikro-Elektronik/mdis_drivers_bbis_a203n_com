@@ -1,8 +1,6 @@
 #***************************  M a k e f i l e  *******************************
 #  
 #         Author: dieter.pfeuffer@men.de
-#          $Date: 2006/09/13 14:09:52 $
-#      $Revision: 1.2 $
 #  
 #    Description: Makefile definitions for the A203N_SW BBIS driver
 #                      
@@ -24,8 +22,13 @@
 
 
 MAK_NAME=a203n_sw
+# the next line is updated during the MDIS installation
+STAMPED_REVISION="mdis_drivers_bbis_a203n_com_02_30-4-gb5fc7a2-dirty_2019-05-28"
+
+DEF_REVISION=MAK_REVISION=$(STAMPED_REVISION)
 
 MAK_SWITCH=$(SW_PREFIX)MAC_MEM_MAPPED \
+		$(SW_PREFIX)$(DEF_REVISION) \
 		   $(SW_PREFIX)MAC_BYTESWAP \
 		   $(SW_PREFIX)A203N_VARIANT=A203N_SW \
 		   $(SW_PREFIX)ID_SW
