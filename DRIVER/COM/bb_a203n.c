@@ -113,7 +113,12 @@ typedef struct {
 #include <MEN/bb_entry.h>	/* bbis jumptable			*/
 #include <MEN/bb_a203n.h>	/* A203N bbis header file	*/
 
-static const char IdentString[]=MENT_XSTR(MAK_REVISION);
+
+#if A203N_VARIANT==A203N
+    static const char IdentString[]=MENT_XSTR_SFX(MAK_REVISION,A203N);
+#else
+    static const char IdentString[]=MENT_XSTR(MAK_REVISION);
+#endif
 
 /*-----------------------------------------+
 |  PROTOTYPES                              |
@@ -1297,11 +1302,7 @@ static int32 A203N_Unused( void )
  */
 static char* Ident( void )
 {
-	return (
-#if A203N_VARIANT==A203N
-		"A203N"
-#endif
-		"  Base Board Handler: $Id: bb_a203n.c,v 1.9 2010/04/20 15:45:24 CKauntz Exp $" );
+	return( (char*) IdentString );
 }
 
 /****************************** Cleanup *************************************/
