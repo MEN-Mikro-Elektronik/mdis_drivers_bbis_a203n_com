@@ -108,128 +108,134 @@
     <member kind="function" static="yes">
       <type>int32</type>
       <name>A203N_Init</name>
-      <anchor>a15</anchor>
+      <anchor>a16</anchor>
       <arglist>(OSS_HANDLE *, DESC_SPEC *, BBIS_HANDLE **)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>A203N_BrdInit</name>
-      <anchor>a16</anchor>
-      <arglist>(BBIS_HANDLE *)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>int32</type>
-      <name>A203N_BrdExit</name>
       <anchor>a17</anchor>
       <arglist>(BBIS_HANDLE *)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
-      <name>A203N_Exit</name>
+      <name>A203N_BrdExit</name>
       <anchor>a18</anchor>
+      <arglist>(BBIS_HANDLE *)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>int32</type>
+      <name>A203N_Exit</name>
+      <anchor>a19</anchor>
       <arglist>(BBIS_HANDLE **)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>A203N_BrdInfo</name>
-      <anchor>a19</anchor>
+      <anchor>a20</anchor>
       <arglist>(u_int32,...)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>A203N_CfgInfo</name>
-      <anchor>a20</anchor>
+      <anchor>a21</anchor>
       <arglist>(BBIS_HANDLE *, u_int32,...)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>A203N_IrqEnable</name>
-      <anchor>a21</anchor>
+      <anchor>a22</anchor>
       <arglist>(BBIS_HANDLE *, u_int32, u_int32)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>A203N_IrqSrvInit</name>
-      <anchor>a22</anchor>
+      <anchor>a23</anchor>
       <arglist>(BBIS_HANDLE *, u_int32)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>void</type>
       <name>A203N_IrqSrvExit</name>
-      <anchor>a23</anchor>
+      <anchor>a24</anchor>
       <arglist>(BBIS_HANDLE *, u_int32)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>A203N_ExpEnable</name>
-      <anchor>a24</anchor>
+      <anchor>a25</anchor>
       <arglist>(BBIS_HANDLE *, u_int32, u_int32)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>A203N_ExpSrv</name>
-      <anchor>a25</anchor>
+      <anchor>a26</anchor>
       <arglist>(BBIS_HANDLE *, u_int32)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>A203N_SetMIface</name>
-      <anchor>a26</anchor>
+      <anchor>a27</anchor>
       <arglist>(BBIS_HANDLE *, u_int32, u_int32, u_int32)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>A203N_ClrMIface</name>
-      <anchor>a27</anchor>
+      <anchor>a28</anchor>
       <arglist>(BBIS_HANDLE *, u_int32)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>A203N_GetMAddr</name>
-      <anchor>a28</anchor>
+      <anchor>a29</anchor>
       <arglist>(BBIS_HANDLE *, u_int32, u_int32, u_int32, void **, u_int32 *)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>A203N_SetStat</name>
-      <anchor>a29</anchor>
+      <anchor>a30</anchor>
       <arglist>(BBIS_HANDLE *, u_int32, int32, INT32_OR_64)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>A203N_GetStat</name>
-      <anchor>a30</anchor>
+      <anchor>a31</anchor>
       <arglist>(BBIS_HANDLE *, u_int32, int32, INT32_OR_64 *)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>A203N_Unused</name>
-      <anchor>a31</anchor>
+      <anchor>a32</anchor>
       <arglist>(void)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>char *</type>
       <name>Ident</name>
-      <anchor>a32</anchor>
+      <anchor>a33</anchor>
       <arglist>(void)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>Cleanup</name>
-      <anchor>a33</anchor>
+      <anchor>a34</anchor>
       <arglist>(BBIS_HANDLE *brdHdl, int32 retCode)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>int32</type>
       <name>CfgInfoSlot</name>
-      <anchor>a34</anchor>
+      <anchor>a35</anchor>
       <arglist>(BBIS_HANDLE *brdHdl, va_list argptr)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>__A203N_GetEntry</name>
-      <anchor>a35</anchor>
+      <anchor>a36</anchor>
       <arglist>(BBIS_ENTRY *bbisP)</arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>const char</type>
+      <name>IdentString</name>
+      <anchor>a15</anchor>
+      <arglist>[]</arglist>
     </member>
   </compound>
   <compound kind="file">
