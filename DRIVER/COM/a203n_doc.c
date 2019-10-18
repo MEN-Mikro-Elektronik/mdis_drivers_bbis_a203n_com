@@ -149,14 +149,6 @@
     Notes:\n
 	- The "Extended non-privileged data access mode (0x09)" will be used on the VMEbus. 
 
-    \n \subsection a203n_min   Minimum descriptor
-    a203n_min.dsc, a203n_sw_min.dsc (see Examples section)\n
-    Demonstrates the minimum set of options necessary for using the driver.
-
-    \n \subsection a203n_max   Maximum descriptor
-    a203n_max.dsc, a203n_sw_max.dsc (see Examples section)\n
-    Shows all possible configuration options for this driver.
-
     \n<b>Getstat/Setstat codes</b>\n
 	Refer to the A203N_GetStat() and  A203N_SetStat() routine for the supported
 	Getstat/Setstat codes.
@@ -164,11 +156,6 @@
     \n<b>Windows specifics</b>\n
 	<a href="../../../A201/DOC/readme_win.txt">Windows specifics for VMEbus carrier boards</a>
 */
-
-/** \example a203n_min.dsc */
-/** \example a203n_max.dsc */
-/** \example a203n_sw_min.dsc */
-/** \example a203n_sw_max.dsc */
 
 /*! \page a203ndummy MEN logo
   \menimages
