@@ -14,10 +14,6 @@ main="A203N BBIS Driver","index.hhc","index.hhk","index.html","index.html",,,,,0
 [FILES]
 index.html
 files.html
-a203n__max_8dsc-example.html
-a203n__min_8dsc-example.html
-a203n__sw__max_8dsc-example.html
-a203n__sw__min_8dsc-example.html
 bb__a203n_8h-source.html
 a203n__doc_8c.html
 bb__a203n_8c.html
@@ -27,7 +23,6 @@ functions.html
 functions_vars.html
 structBBIS__HANDLE.html
 a203ndummy.html
-examples.html
 globals.html
 globals_func.html
 globals_vars.html
